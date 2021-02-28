@@ -1,14 +1,13 @@
 export default function Profile() {
     return (
-        <div className="h-full bg-white dark:bg-black text-black dark:text-white">
+        <div className="h-full bg-white dark:bg-black text-black dark:text-white px-8">
             <div className="flex flex-col justify-center items-start mx-auto max-w-2xl space-y-6 mb-16">
                 <p className="font-bold text-5xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">About Me</p>
                 <p className="text-gray-600 dark:text-gray-400">
                     I'm Andy. I work as a cloud developer at National
                     Instruments in Malaysia.
-                
-                    I'm interested in full-stack development and especially
-                    DevOps.
+                    I'm interested in full-stack development, DevOps and Cloud Computing.
+                    I'm learning Golang, security, system design pattern and microservice.
                 </p>
                 <p className="font-bold text-3xl tracking-light">Background</p>
                 <p className="text-gray-600 dark:text-gray-400">
