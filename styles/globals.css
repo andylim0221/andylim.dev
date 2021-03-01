@@ -3,13 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  min-height:100vh;
+  min-width: 100vw;
+}
 
 
-html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Anonymous Pro"  
+  font-family: "Anonymous Pro";
   }
 
 a {
@@ -32,5 +36,8 @@ a {
 #__next {
     display:flex;
     flex-direction:column;
-    min-height:100vh;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
 }

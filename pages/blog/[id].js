@@ -1,7 +1,13 @@
 import Post from "../../components/Post";
+import ContactCard from "../../components/ContactCard"
 export default function BlogPost({ post }) {
   const { title, createdAt, content } = post;
-  return <Post title={title} createdAt={createdAt} content={content} />;
+  return (
+    <div className="w-full">
+      <Post title={title} createdAt={createdAt} content={content} />
+      <ContactCard />
+    </div>
+  );
 }
 
 export async function getStaticPaths() {

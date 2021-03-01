@@ -3,7 +3,7 @@ import Moment from "react-moment";
 
 export default function PostCard({ post }) {
     return (
-        <div className="border-2 border-gray-600 dark:border-gray-400 rounded-md w-full p-8">
+        <div className="border-2 border-gray-600 dark:border-gray-400 rounded-md w-full p-8 overflow-ellipsis overflow-hidden break-word ">
         <Link href={`blog/${post.id}`}>
             <a className="">
                 <div className="mb-8">
@@ -15,7 +15,7 @@ export default function PostCard({ post }) {
                             <Moment date={post.createdAt} />
                         </p>
                     </div>
-                    <div className="whitespace-normal text-black dark:text-white overflow-hidden overflow-ellipsis">
+                    <div className="whitespace-normal text-black dark:text-white">
                         {post.description.slice(0,200)}
                     </div>
                 </div>

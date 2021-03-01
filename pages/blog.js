@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PostCard from "../components/PostCard";
+import ContactCard from "../components/ContactCard";
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");
@@ -9,9 +10,9 @@ export default function Blog({ posts }) {
       post.title.toLowerCase().includes(searchValue.toLowerCase())
     );
   return (
-    <div className="h-full bg-white dark:bg-black px-8">
+    <div className="h-full md:min-h-screen bg-white dark:bg-black px-8">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto pb-16 space-y-6">
-        <h1 className="font-bold text-5xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
+        <h1 className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
           Blog
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -28,12 +29,11 @@ export default function Blog({ posts }) {
             No posts found
           </div>
         )}
-        <div className="h-screen flex flex-col items-start items-start space-y-6">
         {filteredPosts.map((post) => (
           <PostCard post={post} />
         ))}
-        </div>
       </div>
+      <ContactCard />
     </div>
   );
 }

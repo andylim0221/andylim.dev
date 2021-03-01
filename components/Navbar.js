@@ -14,7 +14,7 @@ export default function Navbar() {
                         <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">Andy</a>
                     </Link>
                 </div>
-                <div> 
+                <div className="flex items-center justify-center"> 
                     <Link href="/profile">
                         <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">Profile</a>
                     </Link>
