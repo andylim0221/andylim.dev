@@ -1,6 +1,9 @@
+import Layout from '../components/Layout';
+
 export default function Profile() {
   return (
-    <div className="h-full bg-white dark:bg-black text-black dark:text-white px-8">
+    <Layout title={"About Me"}>
+    <div className="h-full text-black dark:text-white px-8">
       <div className="flex flex-col justify-center items-start mx-auto max-w-2xl space-y-6 mb-16">
         <p className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
           About Me
@@ -41,5 +44,6 @@ export default function Profile() {
         </p>
       </div>
     </div>
+    </Layout>
   );
 }

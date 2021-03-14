@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import {useRouter} from 'next/router'
 
-export default function Container(props) {
-    const router = useRouter()
+export default function SEO(props) {
     const {children, ...metadata} = props;
     const meta = {
         name: "Andy Lim",
@@ -19,8 +17,6 @@ export default function Container(props) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://andylim.dev${router.asPath}`} />
-        <link rel="canonical" href={`https://andylim.dev${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content={meta.name} />
         <meta property="og:description" content={meta.description} />
