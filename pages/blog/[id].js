@@ -3,10 +3,10 @@ import ContactCard from "../../components/ContactCard"
 import Layout from "../../components/Layout"
 import {getAllArticles,getArticleById} from '../../lib/api'
 export default function BlogPost({ post }) {
-  const { title, published_at, body_markdown } = post;
+  const { title, published_at, body_markdown, description } = post;
 
   return (
-    <Layout date={published_at} title={title}>
+    <Layout date={published_at} title={title} description={description}>
     <div className="w-full">
       <Post title={title} createdAt={published_at} content={body_markdown} />
       <ContactCard />

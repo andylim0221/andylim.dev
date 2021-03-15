@@ -7,7 +7,7 @@ export default function Navbar() {
 
     useEffect(() => setMounted(true), []);
     return (
-            <div className="sticky top-0 bg-white z-50 border-b dark:bg-gray-900 ">
+            <div className="sticky top-0 bg-white z-50 border-b dark:bg-gray-900">
             <nav className="flex justify-between md:justify-between items-center text-xl w-full mx-auto py-4 max-w-screen-2xl px-8">
                 <div>
                     <Link href="/">
@@ -15,8 +15,8 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className="flex items-center justify-center"> 
-                    <Link href="/profile">
-                        <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">Profile</a>
+                    <Link href="/about">
+                        <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">About</a>
                     </Link>
                     <Link href="/blog">
                         <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">Blog</a>

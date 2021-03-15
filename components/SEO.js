@@ -4,7 +4,7 @@ export default function SEO(props) {
     const {children, ...metadata} = props;
     const meta = {
         name: "Andy Lim",
-        title: "I am Andy Lim",
+        title: "Andy Lim - Developer",
         description: "I am a self-taught cloud developer from Malaysia, interested in full-stack development",
         image: "happy.png",
         ...metadata
