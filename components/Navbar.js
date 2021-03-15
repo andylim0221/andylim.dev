@@ -1,11 +1,13 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+
 export default function Navbar() {
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme();
 
     useEffect(() => setMounted(true), []);
+
     return (
             <div className="sticky top-0 bg-white z-50 border-b dark:bg-gray-900">
             <nav className="flex justify-between md:justify-between items-center text-xl w-full mx-auto py-4 max-w-screen-2xl px-8">
@@ -24,6 +26,7 @@ export default function Navbar() {
                     <button
                         type="button"
                         className="bg-gray-300 dark:bg-gray-500 rounded p-3 h-10 w-10"
+                        aria-label="set-theme"
                         onClick={() =>
                             setTheme(theme === "dark" ? "light" : "dark")
                         }

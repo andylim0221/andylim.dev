@@ -16,10 +16,10 @@ export default function About() {
         </p>
           <p className="font-bold text-3xl tracking-light">Background</p>
           <p className="text-gray-600 dark:text-gray-400">
-            I'm graduated from Bachelor of Science in Pure Mathematics from
+            I'm graduated with Bachelor of Science in Pure Mathematics from
             Universiti Sains Malaysia. It doesn't make me a Maths genius but it
             makes me more interested in Mathematics topics, such as real analysis,
-            comllex analysis. My minor project topic is the convergence of
+            complex analysis and abstract algebra. My minor project topic is to study the convergence of
             Binomial Option Pricing Model to Black-Scholes Model.
         </p>
           <p className="font-bold text-3xl tracking-light">Work Experience</p>
