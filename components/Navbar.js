@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
     const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme();
-
+    const { theme, setTheme } = useTheme("");
+    
     useEffect(() => setMounted(true), []);
 
     return (
@@ -13,16 +13,17 @@ export default function Navbar() {
             <nav className="flex justify-between md:justify-between items-center text-xl w-full mx-auto py-4 max-w-screen-2xl px-8">
                 <div>
                     <Link href="/">
-                        <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">Andy</a>
+                        <a className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100 ">Andy</a>
                     </Link>
                 </div>
                 <div className="flex items-center justify-center"> 
                     <Link href="/about">
-                        <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">About</a>
+                        <a className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100">About</a>
                     </Link>
                     <Link href="/blog">
-                        <a className="p-2 sm:p-4 text-gray-900 dark:text-gray-100 hover:underline">Blog</a>
+                        <a className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100 ">Blog</a>
                     </Link>
+                    
                     <button
                         type="button"
                         className="bg-gray-300 dark:bg-gray-500 rounded p-3 h-10 w-10"

@@ -33,6 +33,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+.next
+.out 
+.vscode
 
 /strapi/app
 /strapi/data

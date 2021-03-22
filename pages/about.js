@@ -23,8 +23,21 @@ export default function About() {
             Binomial Option Pricing Model to Black-Scholes Model.
         </p>
           <p className="font-bold text-3xl tracking-light">Work Experience</p>
-          <p> Cloud developer, National Instruments </p>
-          <p> Software Development Engineer, Aglive Ltd. </p>
+          <i className="font-bold text-xl"> Cloud developer, National Instruments </i>
+          <ul className="text-gray-600 dark:text-gray-400">
+         <li>Provision, automate and manage infrastructure using Infrastructure as Code tools such as AWS CloudFormation or AWS CDK.</li>
+        <li>Design, develop and implement automation tasks using AWS SDK.</li>
+       <li>Study, design and develop CI/CD pipeline for infrastructure code.</li>
+    <li>Assist Senior Cloud Service Engineer on providing support to internal customers.</li>
+    </ul>
+          <i className="font-bold text-xl"> Software Development Engineer, Aglive Ltd. </i>
+          <ul className="text-gray-600 dark:text-gray-400">  
+            <li>Developed and deployed ERC721 smart contract up to private blockchain.</li>
+            <li>Developed and deployed private Ethereum blockchain as docker containers onto AWS EC2.</li>
+            <li>Developed asynchronous work queue from backend to private blokchain using RabbitMQ and NodeJS.</li>
+            <li>Created React Native native module to reduce ether wallet generation computation time from 7 minutes to 3 seconds using Java and Swift.</li>
+            <li>Developed WeChat mini program using WeChat proprietary language and JavaScript.</li>
+          </ul>
           <p className="font-bold text-3xl tracking-light">Technologies</p>
           <i className="font-bold text-xl">Programming Language</i>
           <p className="text-gray-600 dark:text-gray-400">
