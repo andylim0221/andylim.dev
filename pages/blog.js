@@ -33,7 +33,7 @@ export default function Blog({ posts }) {
             </div>
           )}
           {filteredPosts.map(
-            (post) => post.published && <PostCard post={post} />
+            (post) => post.published && <PostCard post={post} key={String(post.id)} />
           )}
         </div>
         <ContactCard />
@@ -43,7 +43,9 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = await getAllArticles();
+  const unfilteredPosts = await getAllArticles();
+  const posts = unfilteredPosts.filter((post)=>post.published);
+  
   return {
     props: {
       posts,

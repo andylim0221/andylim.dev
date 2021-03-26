@@ -5,14 +5,12 @@ import { getAllArticles, getArticleById } from "../../lib/api";
 import { useRouter } from "next/router";
 
 export default function BlogPost({ post }) {
-  const router = useRouter();
-  console.log(router)
-  const { title, published_at, body_markdown, description } = post;
+  const { cover_image, title, published_at, body_markdown, description } = post;
 
   return (
     <Layout date={published_at} title={title} description={description}>
       <div className="w-full">
-        <Post title={title} createdAt={published_at} content={body_markdown} />
+        <Post cover_image={cover_image} title={title} createdAt={published_at} content={body_markdown} />
         <ContactCard />
       </div>
     </Layout>
@@ -22,7 +20,7 @@ export default function BlogPost({ post }) {
 export async function getStaticPaths() {
   const res = await getAllArticles();
   const paths = res.map((post) => ({
-    params: { id: post.id },
+    params: { id: String(post.id) },
   }));
   return { paths, fallback: false };
 }

@@ -78,6 +78,17 @@ html,body  {
 }
 
 
+.hover-animation {
+  background: 
+      linear-gradient(currentColor 0 0) 
+      var(--p, 100%) 100% /var(--d, 0) 3px 
+      no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+}
+.hover-animation:hover {
+  --d: 100%;
+  --p: 0%;
+}
 
 .prose pre {
   @apply bg-gray-50 border border-gray-200 dark:border-gray-700 dark:bg-gray-900;
@@ -161,16 +172,12 @@ pre {
   scrollbar-width: none; /* Firefox */
 }
 
-.remark-code-title {
-  @apply text-gray-800 dark:text-gray-200 px-5 py-3 border border-b-0 border-gray-200 dark:border-gray-700 rounded-t bg-gray-200 dark:bg-gray-800 text-sm font-mono font-bold;
+ul {
+  list-style-type: square;
 }
 
-.remark-code-title + pre {
-  @apply mt-0 rounded-t-none;
-}
-
-.mdx-marker {
-  @apply block -mx-4 px-4 bg-gray-100 dark:bg-gray-800 border-l-4 border-blue-500;
+ol {
+  list-style-type: decimal;
 }
 
 /* Remove Safari input shadow on mobile */
