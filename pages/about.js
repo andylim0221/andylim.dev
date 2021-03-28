@@ -12,7 +12,7 @@ export default function About() {
           </p>
           <button type="button" className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white  hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow">
             <a
-              href={RESUME_URL}
+              href={"https://s3.amazonaws.com/andy-static-file/LimChinHuat_Resume.pdf"}
               target="_blank"
             >
               Download Resume
