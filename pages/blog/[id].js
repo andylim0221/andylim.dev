@@ -1,16 +1,15 @@
-import Post from "../../components/Post";
+import BlogPost from "../../components/BlogPost";
 import ContactCard from "../../components/ContactCard";
 import Layout from "../../components/Layout";
 import { getAllArticles, getArticleById } from "../../lib/api";
-import { useRouter } from "next/router";
 
-export default function BlogPost({ post }) {
+export default function Post({ post }) {
   const { cover_image, title, published_at, body_markdown, description } = post;
 
   return (
     <Layout date={published_at} title={title} description={description}>
       <div className="w-full">
-        <Post cover_image={cover_image} title={title} createdAt={published_at} content={body_markdown} />
+        <BlogPost cover_image={cover_image} title={title} createdAt={published_at} content={body_markdown} />
         <ContactCard />
       </div>
     </Layout>
