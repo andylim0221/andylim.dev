@@ -30,7 +30,7 @@ export default function About() {
           </p>
           <p className="font-bold text-3xl tracking-light">Background</p>
           <p className="text-gray-600 dark:text-gray-400">
-            I was born in Taiping which is known as the wettest town in Malaysia and you will fell in love with this place if you ever visited Taiping.
+            I was born in Taiping which is known as the wettest town in Malaysia and you will fall in love with this place if you ever visited Taiping.
             <br></br> <br></br>
             I'm graduated with Bachelor of Science in Pure Mathematics from
             Universiti Sains Malaysia. It doesn't make me a Maths genius but it

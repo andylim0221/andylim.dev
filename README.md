@@ -1,9 +1,14 @@
-## andylim.dev Roadmap
+## Personal Website Features
 
-- [x] Blog API
-- [x] Hosting server
-- [x] Domain name
-- [x] CI/CD pipeline 
-- [ ] Blog post pagination
-- [ ] Portfolio 
-- [ ] Resume attachment
+- Blog API
+- Hosting server
+- Domain name
+- CI/CD pipeline 
+- Blog post pagination 
+- Resume attachment
+
+
+Todos
+- [x] Tailwind Typography experiment
+- [ ] Complete blog post pagination 
+- [ ] Portfolio page
