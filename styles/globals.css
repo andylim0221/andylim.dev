@@ -118,14 +118,12 @@ pre {
 
 ul {
   list-style-type: square;
-  list-style-position: inside;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 ol {
   list-style-type: decimal;
-  list-style-position: inside;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -151,5 +149,5 @@ input[type='email'] {
 }
 
 .markdown-body {
-  color: black;
+  line-height: 2;
 }
