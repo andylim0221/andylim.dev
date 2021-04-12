@@ -6,10 +6,18 @@ import { getAllArticles, getArticleById } from "../../lib/api";
 
 export default function Post({ post }) {
   const router = useRouter()
-
-  const { cover_image, title, published_at, body_markdown, description } = post;
   
-  return router.isFallBack? <div>Loading ...</div> :(
+  if(router.isFallback) {
+    return (
+      <div>
+      Loading ...
+      </div>
+    )
+  }
+
+  const {title, published_at, body_markdown, description, cover_image } = post;
+
+  return (
     <Layout date={published_at} title={title} description={description}>
       <div className="w-full">
         <BlogPost cover_image={cover_image} title={title} createdAt={published_at} content={body_markdown} />
@@ -21,9 +29,12 @@ export default function Post({ post }) {
 
 export async function getStaticPaths() {
   const res = await getAllArticles();
-  const paths = res.map((post) => ({
+  const posts = res.filter(post=>post.published)
+
+  const paths = posts.map((post) => ({
     params: { id: String(post.id) },
   }));
+
   return { paths, fallback: true };
 }
 
