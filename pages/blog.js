@@ -25,8 +25,8 @@ export default function Blog({ posts }) {
 
   return (
     <Layout title={"Blog"}>
-      <div className="h-full md:min-h-screen px-8">
-        <div className="flex flex-col justify-center items-start max-w-2xl mx-auto pb-16 space-y-6">
+      <div className="h-full md:min-h-screen px-5">
+        <div className="flex flex-col justify-center items-start max-w-3xl mx-auto pb-16 space-y-6">
           <h1 className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             Blog
           </h1>

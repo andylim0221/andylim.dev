@@ -15,7 +15,7 @@ export default function PostCard({ post }) {
                             {title}
                         </h1>
                         <p className="text-sm text-gray-600 dark:text-gray-400 mb-5">
-                            <Moment date={published_at} format="Do MMM YYYY h:mma Z" local={true} />
+                            Published at <Moment date={published_at} format="Do MMM YYYY h:mma Z" local={true} />
                         </p>
                     </div>
                     <div className="whitespace-normal text-black dark:text-white">

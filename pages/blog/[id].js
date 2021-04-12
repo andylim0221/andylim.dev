@@ -1,12 +1,15 @@
+import {useRouter} from 'next/router'
 import BlogPost from "../../components/BlogPost";
 import ContactCard from "../../components/ContactCard";
 import Layout from "../../components/Layout";
 import { getAllArticles, getArticleById } from "../../lib/api";
 
 export default function Post({ post }) {
-  const { cover_image, title, published_at, body_markdown, description } = post;
+  const router = useRouter()
 
-  return (
+  const { cover_image, title, published_at, body_markdown, description } = post;
+  
+  return router.isFallBack? <div>Loading ...</div> :(
     <Layout date={published_at} title={title} description={description}>
       <div className="w-full">
         <BlogPost cover_image={cover_image} title={title} createdAt={published_at} content={body_markdown} />
@@ -21,7 +24,7 @@ export async function getStaticPaths() {
   const paths = res.map((post) => ({
     params: { id: String(post.id) },
   }));
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
