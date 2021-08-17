@@ -12,7 +12,7 @@ export default function BlogPost({ cover_image, title, createdAt, content }) {
           {title}
         </h1>
         <p className="text-sm  text-gray-600 dark:text-gray-400 my-10">
-          Published at <Moment date={createdAt} format="Do MMM YYYY h:mma Z" />
+          Published at <Moment date={createdAt} format="Do MMM YYYY h:mma GMT-Z" />
         </p>
         <hr></hr>
         <ReactMarkdown
