@@ -10,14 +10,12 @@ export default function About() {
           <p className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             About Me
           </p>
-          <button type="button" className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white  hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow">
-            <a
+            <a className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white  hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow"
               href={"https://andy-static-file.s3.ap-southeast-1.amazonaws.com/public/LimChinHuat_Resume.pdf"}
               target="_blank"
             >
               Download Resume
             </a>
-          </button>
           <p className="text-gray-600 dark:text-gray-400">
             I'm Andy. I work as a cloud developer at National Instruments in
             Malaysia. I'm interested in full-stack development, DevOps and Cloud
