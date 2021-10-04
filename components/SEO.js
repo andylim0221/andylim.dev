@@ -6,7 +6,7 @@ export default function SEO(props) {
         name: "Andy Lim",
         title: "Andy Lim - Developer",
         description: "I am a self-taught cloud developer from Malaysia, interested in full-stack development",
-        image: "https://andy-static-file.s3.ap-southeast-1.amazonaws.com/public/header.png",
+        image: "https://d3fdk6ilfp4n6v.cloudfront.net/public/header.png",
         ...metadata
     }
     
