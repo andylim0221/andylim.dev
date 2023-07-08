@@ -8,13 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "eslint-config-next": "^13.4.9",
     "github-markdown-css": "^4.0.0",
     "moment": "^2.29.1",
-    "next": "10.0.7",
+    "next": "^13.4.9",
     "next-themes": "0.0.14",
     "nprogress": "^0.2.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-markdown": "^5.0.3",
     "react-moment": "^1.1.1",
     "react-syntax-highlighter": "^15.4.3"

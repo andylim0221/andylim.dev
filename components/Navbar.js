@@ -12,16 +12,16 @@ export default function Navbar() {
             <div className="sticky top-0 bg-white z-50 border-b dark:bg-gray-900">
             <nav className="flex justify-between md:justify-between items-center text-xl w-full mx-auto py-4 max-w-screen-2xl px-8">
                 <div>
-                    <Link href="/">
-                        <a className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100 ">Andy</a>
+                    <Link href="/" className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100">
+                        Andy
                     </Link>
                 </div>
                 <div className="flex items-center justify-center"> 
-                    <Link href="/about">
-                        <a className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100">About</a>
+                    <Link href="/about" className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100">
+                        About
                     </Link>
-                    <Link href="/blog">
-                        <a className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100 ">Blog</a>
+                    <Link href="/blog" className="hover:underline p-2 sm:p-4 text-gray-900 dark:text-gray-100 ">
+                        Blog
                     </Link>
                     
                     <button
