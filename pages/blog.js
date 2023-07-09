@@ -34,7 +34,7 @@ export default function Blog({ posts }) {
   return (
     <Layout title={props.title}>
       <div className="h-full md:min-h-screen px-5">
-        <div className="flex-auto flex-col justify-content items-start max-w-3xl mx-auto pb-16 space-y-6">
+        <div className="flex-auto justify-content items-start max-w-3xl mx-auto pb-16 space-y-6">
           <h1 className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             {props.title}
           </h1>
