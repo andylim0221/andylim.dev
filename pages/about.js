@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import ContactCard from "../components/ContactCard";
-import {RESUME_URL} from "../lib/api.js";
+import { RESUME_URL } from "../lib/api.js";
 
 export default function About() {
   return (
@@ -10,25 +10,39 @@ export default function About() {
           <p className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             About Me
           </p>
-            <a className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white  hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow"
-              href={RESUME_URL}
-              target="_blank"
-            >
-              Download Resume
-            </a>
           <p className="text-gray-600 dark:text-gray-400">
+          I am a Senior Software Developer working at <a href="izeem.com">iZeeM</a> to develop web-based applications and manage cloud infrastructures. Previously, I was working as a IT Infrastructure Delivery Engineer II at <a href="https://www.ni.com/en-us.html">National Instruments</a>, administrating and managing cloud and Kubernetes environments.   
+          <br></br>
+          I am learning best practices on web development and tools, eg. React, React Query, GCP, PostgreSQL, Backend.
+          <br></br>
+          When I am not coding, I like watching animes/drama, listening rock musics and exploring new places.
+          </p>
+          <a
+            className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow cursor-pointer"
+            href={RESUME_URL}
+            target="_blank"
+            download
+          >
+          Download Resume
+          </a>
+          {/* <p className="text-gray-600 dark:text-gray-400">
             I'm Andy. I work as a cloud developer at National Instruments in
             Malaysia. I'm interested in full-stack development, DevOps and Cloud
             Computing. I'm learning Golang, security, system design pattern and
-            microservice. 
-            <br></br><br></br>
-            When I'm not coding, I like to watch animes, dramas and recently I'm learning guitar 🎸 and stock trading 📈.
-            <br></br><br></br>
-            I love my girlfriend because she's smart, kind, adorable, astute and observant.
+            microservice.
+            <br></br>
+            <br></br>
+            When I'm not coding, I like to watch animes, dramas and recently I'm
+            learning guitar 🎸 and stock trading 📈.
+            <br></br>
+            <br></br>I love my girlfriend because she's smart, kind, adorable,
+            astute and observant.
           </p>
           <p className="font-bold text-3xl tracking-light">Background</p>
           <p className="text-gray-600 dark:text-gray-400">
-            I was born in Taiping which is known as the wettest town in Malaysia and you will fall in love with this place if you ever visited Taiping.
+            I was born in Taiping which is known as the wettest town in Malaysia
+            and you will fall in love with this place if you ever visited
+            Taiping.
             <br></br> <br></br>
             I'm graduated with Bachelor of Science in Pure Mathematics from
             Universiti Sains Malaysia. It doesn't make me a Maths genius but it
@@ -103,7 +117,7 @@ export default function About() {
           <p className="text-gray-600 dark:text-gray-400">
             AWS Cloudformation, AWS CDK, Terraform, SQL, Git, Github Actions,
             Docker
-          </p>
+          </p> */}
         </div>
       </div>
       <ContactCard />

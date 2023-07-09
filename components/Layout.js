@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import SEO from './SEO';
+
 export default function Layout(props) {
     const {children, ...customMeta} = props;
 

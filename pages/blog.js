@@ -13,7 +13,7 @@ export default function Blog({ posts }) {
   const props = {
     title: "Blog",
     description: `These are the blogs I have been writing for my software development journey. In total, I have written ${posts.length} articles.`,
-    search: "Search...",
+    search: "Search by title...",
     noPageFound: "No Posts Found"
   }
 
@@ -34,7 +34,7 @@ export default function Blog({ posts }) {
   return (
     <Layout title={props.title}>
       <div className="h-full md:min-h-screen px-5">
-        <div className="flex-auto justify-content items-start max-w-3xl mx-auto pb-16 space-y-6">
+        <div className="flex-grow max-w-3xl mx-auto pb-16 space-y-6">
           <h1 className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             {props.title}
           </h1>
