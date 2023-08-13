@@ -17,14 +17,12 @@ export default function About() {
           <br></br>
           When I am not coding, I like watching animes/drama, listening rock musics and exploring new places.
           </p>
-          <a
+          <a 
             className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow cursor-pointer"
             href={RESUME_URL}
-            target="_blank"
-            download
-          >
-          Download Resume
-          </a>
+            >
+              Download Resume
+            </a>
           {/* <p className="text-gray-600 dark:text-gray-400">
             I'm Andy. I work as a cloud developer at National Instruments in
             Malaysia. I'm interested in full-stack development, DevOps and Cloud
