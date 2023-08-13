@@ -16,7 +16,7 @@ export default function BlogPost({ cover_image, title, createdAt, content }) {
         </p>
         <hr></hr>
         <ReactMarkdown
-          className="md:text-lg text-justify text-gray-900  dark:text-white w-full markdown-body"
+          className="md:text-lg text-justify text-gray-900 bg-white dark:bg-gray-900  dark:text-white w-full markdown-body"
           children={content}
           renderers={{
             code: CodeBlock,
