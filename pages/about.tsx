@@ -10,10 +10,10 @@ export default function About() {
           <p className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             About Me
           </p>
-          <p className="text-center text-gray-600 dark:text-gray-400">
+          <p className="text-justify text-gray-600 dark:text-gray-400">
             I am working as a senior software developer in a Singapore startup. I designed, developed and deployed transport management system and waste management system mainly used in Singapore. Tech stacks involved are <b>React</b>, <b>TypeScript</b>, <b>Next.js</b>, <b>Nest.js</b>, <b>Docker</b>, <b>Bitbucket pipeline</b>, and <b>Google Cloud Platform</b>.
           </p>
-          <p className="text-center text-gray-600 dark:text-gray-400">
+          <p className="text-justify text-gray-600 dark:text-gray-400">
             I am also working as a freelance AWS DevOps Engineer on <a className="font-bold text-green-500" href="https://www.upwork.com/freelancers/~0141e107cb94191eb5">Upwork</a>, providing services on provisioning, optimizing and developing infrastructures and resources in cloud.
           </p>
           <button
