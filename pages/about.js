@@ -10,112 +10,18 @@ export default function About() {
           <p className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             About Me
           </p>
-          <p className="text-gray-600 dark:text-gray-400">
-          I am a Senior Software Developer working at <a href="izeem.com">iZeeM</a> to develop web-based applications and manage cloud infrastructures. Previously, I was working as a IT Infrastructure Delivery Engineer II at <a href="https://www.ni.com/en-us.html">National Instruments</a>, administrating and managing cloud and Kubernetes environments.   
-          <br></br>
-          I am learning best practices on web development and tools, eg. React, React Query, GCP, PostgreSQL, Backend.
-          <br></br>
-          When I am not coding, I like watching animes/drama, listening rock musics and exploring new places.
+          <p className="text-center text-gray-600 dark:text-gray-400">
+            I am working as a senior software developer in a Singapore startup. I designed, developed and deployed transport management system and waste management system mainly used in Singapore. Tech stacks involved are <b>React</b>, <b>TypeScript</b>, <b>Next.js</b>, <b>Nest.js</b>, <b>Docker</b>, <b>Bitbucket pipeline</b>, and <b>Google Cloud Platform</b>.
           </p>
-          <a 
+          <p className="text-center text-gray-600 dark:text-gray-400">
+            I am also working as a freelance AWS DevOps Engineer on <a className="font-bold text-green-500" href="https://www.upwork.com/freelancers/~0141e107cb94191eb5">Upwork</a>, providing services on provisioning, optimizing and developing infrastructures and resources in cloud.
+          </p>
+          <button
             className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow cursor-pointer"
-            href={RESUME_URL}
+            onClick={ () => window.open(`${RESUME_URL}`)}
             >
               Download Resume
-            </a>
-          {/* <p className="text-gray-600 dark:text-gray-400">
-            I'm Andy. I work as a cloud developer at National Instruments in
-            Malaysia. I'm interested in full-stack development, DevOps and Cloud
-            Computing. I'm learning Golang, security, system design pattern and
-            microservice.
-            <br></br>
-            <br></br>
-            When I'm not coding, I like to watch animes, dramas and recently I'm
-            learning guitar 🎸 and stock trading 📈.
-            <br></br>
-            <br></br>I love my girlfriend because she's smart, kind, adorable,
-            astute and observant.
-          </p>
-          <p className="font-bold text-3xl tracking-light">Background</p>
-          <p className="text-gray-600 dark:text-gray-400">
-            I was born in Taiping which is known as the wettest town in Malaysia
-            and you will fall in love with this place if you ever visited
-            Taiping.
-            <br></br> <br></br>
-            I'm graduated with Bachelor of Science in Pure Mathematics from
-            Universiti Sains Malaysia. It doesn't make me a Maths genius but it
-            makes me more interested in Mathematics topics, such as real
-            analysis, complex analysis and abstract algebra. My minor project
-            topic is to study the convergence of Binomial Option Pricing Model
-            to Black-Scholes Model.
-          </p>
-          <p className="font-bold text-3xl tracking-light">Work Experience</p>
-          <i className="font-bold text-xl">
-            {" "}
-            Cloud developer, National Instruments{" "}
-          </i>
-          <ul className="text-gray-600 dark:text-gray-400">
-            <li>
-              Provision, automate and manage infrastructure using Infrastructure
-              as Code tools such as AWS CloudFormation or AWS CDK.
-            </li>
-            <li>
-              Design, develop and implement automation tasks using AWS SDK.
-            </li>
-            <li>
-              Study, design and develop CI/CD pipeline for infrastructure code.
-            </li>
-            <li>
-              Assist Senior Cloud Service Engineer on providing support to
-              internal customers.
-            </li>
-          </ul>
-          <i className="font-bold text-xl">
-            {" "}
-            Software Development Engineer, Aglive Ltd.{" "}
-          </i>
-          <ul className="text-gray-600 dark:text-gray-400">
-            <li>
-              Developed and deployed ERC721 smart contract up to private
-              blockchain.
-            </li>
-            <li>
-              Developed and deployed private Ethereum blockchain as docker
-              containers onto AWS EC2.
-            </li>
-            <li>
-              Developed asynchronous work queue from backend to private
-              blokchain using RabbitMQ and NodeJS.
-            </li>
-            <li>
-              Created React Native native module to reduce ether wallet
-              generation computation time from 7 minutes to 3 seconds using Java
-              and Swift.
-            </li>
-            <li>
-              Developed WeChat mini program using WeChat proprietary language
-              and JavaScript.
-            </li>
-          </ul>
-          <p className="font-bold text-3xl tracking-light">Technologies</p>
-          <i className="font-bold text-xl">Programming Language</i>
-          <p className="text-gray-600 dark:text-gray-400">
-            JavaScript, TypeScript, Python, Golang, C++
-          </p>
-          <i className="font-bold text-xl">Frontend</i>
-          <p className="text-gray-600 dark:text-gray-400">
-            HTML/CSS, React, React Native, Redux, React Context, NextJS,
-            Tailwind CSS
-          </p>
-          <i className="font-bold text-xl">Backend</i>
-          <p className="text-gray-600 dark:text-gray-400">
-            Golang, NodeJS, JWT authentication
-          </p>
-          <i className="font-bold text-xl">Tools</i>
-          <p className="text-gray-600 dark:text-gray-400">
-            AWS Cloudformation, AWS CDK, Terraform, SQL, Git, Github Actions,
-            Docker
-          </p> */}
+          </button>
         </div>
       </div>
       <ContactCard />
