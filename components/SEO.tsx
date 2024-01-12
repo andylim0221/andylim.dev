@@ -1,19 +1,18 @@
 import Head from 'next/head'
 
 interface ISEO {
-  children: React.ReactNode,
+  title?: string;
   type?: string;
   date?: string;
 }
 
 export default function SEO(props: ISEO) {
-    const {children, ...metadata} = props;
     const meta = {
         name: "andylim.dev",
         title: "Andy Lim - Developer Portfolio",
         description: "An AWS DevOps Engineer Story",
         image: "https://d3fdk6ilfp4n6v.cloudfront.net/public/header.png",
-        ...metadata
+        ...props
     }
     
 

@@ -1,7 +1,7 @@
 interface IPagination {
   postsPerPage: number;
   totalPosts: number;
-  paginate: number;
+  paginate: (page: number) => void;
   currentPage: number;
 }
 

@@ -1,14 +1,8 @@
 import Link from "next/link";
 import Moment from "react-moment";
+import { UserArticlesType } from "../types";
 
-interface IPostCard {
-    id: string;
-    title: string;
-    description: string;
-    published_at: string;
-}
-
-export default function PostCard({ post }: { post: IPostCard }) {
+export default function PostCard({ post }: { post: UserArticlesType }) {
 
     const {id, title, description, published_at} = post
 
