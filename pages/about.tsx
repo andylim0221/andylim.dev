@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import ContactCard from "../components/ContactCard";
-import { RESUME_URL } from "../lib/api.js";
+import { RESUME_URL } from "../lib/api";
 
 export default function About() {
   return (

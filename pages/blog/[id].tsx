@@ -1,10 +1,14 @@
 import {useRouter} from 'next/router'
+import {GetStaticPaths, GetStaticProps} from 'next';
 import BlogPost from "../../components/BlogPost";
 import ContactCard from "../../components/ContactCard";
 import Layout from "../../components/Layout";
 import { getAllArticles, getArticleById } from "../../lib/api";
+import { UserArticlesType, ArticleType } from "../../types";
+import { ParsedUrlQuery } from 'querystring';
 
-export default function Post({ post }) {
+
+export default function Post({ post }: { post: ArticleType}) {
   const router = useRouter()
   
   if(router.isFallback) {
@@ -27,8 +31,12 @@ export default function Post({ post }) {
   );
 }
 
-export async function getStaticPaths() {
-  const res = await getAllArticles();
+interface StaticParams extends ParsedUrlQuery {
+  id: string
+}
+
+export const getStaticPaths = (async () => {
+  const res: UserArticlesType[] = await getAllArticles();
   const posts = res.filter(post=>post.published)
 
   const paths = posts.map((post) => ({
@@ -36,13 +44,15 @@ export async function getStaticPaths() {
   }));
 
   return { paths, fallback: true };
-}
+}) satisfies GetStaticPaths;
 
-export async function getStaticProps({ params }) {
-  const post = await getArticleById(params.id);
-
+export const getStaticProps = (async (context) => {
+  const { id } = context.params as StaticParams;
+  
+  const post = await getArticleById(id);
+  
   return {
     props: { post },
     revalidate: 10
   };
-}
+}) satisfies GetStaticProps;
