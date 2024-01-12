@@ -4,11 +4,13 @@ import Pagination from "../components/Pagination";
 import ContactCard from "../components/ContactCard";
 import Layout from "../components/Layout";
 import { getAllArticles } from "../lib/api";
+import { UserArticlesType } from "../types";
+import { GetStaticProps } from "next";
 
-export default function Blog({ posts }) {
-  const [searchValue, setSearchValue] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage] = useState(3);
+export default function Blog({ posts }: { posts: UserArticlesType[] }) {
+  const [searchValue, setSearchValue] = useState<string>("");
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [postPerPage] = useState<number>(3);
 
   const props = {
     title: "Blog",
@@ -18,7 +20,7 @@ export default function Blog({ posts }) {
   }
 
   const filteredPosts = posts
-    .sort((a, b) => Number(Date(b.published_at)) - Number(Date(a.published_at)))
+    .sort((a, b) => Number(new Date(b.published_at)) - Number(new Date(a.published_at)))
     .filter((post) =>
       post.title.toLowerCase().includes(searchValue.toLowerCase())
     );
@@ -27,7 +29,7 @@ export default function Blog({ posts }) {
   const indexOfFirstPost = indexOfLastPost - postPerPage;
   const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
 
-  const paginate = pageNumber => {
+  const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber)
   }
 
@@ -63,13 +65,23 @@ export default function Blog({ posts }) {
   );
 }
 
-export async function getStaticProps() {
-  const unfilteredPosts = await getAllArticles();
-  const posts = unfilteredPosts.filter(post=>post.published)
+export const getStaticProps = (async () => {
+  const unfilteredPosts: UserArticlesType[] = await getAllArticles();
+  if(!unfilteredPosts) {
+    return  {
+      props: {
+        posts: [],
+        notFound:true
+      },
+      revalidate: 10
+    }
+  }
+  const posts = Array.isArray(unfilteredPosts)? unfilteredPosts.filter(post=>post.published): [];
+  
   return {
     props: {
       posts,
     },
     revalidate: 10,
   };
-}
+}) satisfies GetStaticProps

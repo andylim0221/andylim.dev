@@ -1,7 +1,14 @@
 import Navbar from './Navbar';
 import SEO from './SEO';
 
-export default function Layout(props) {
+type LayoutProps = {
+    children: React.ReactNode,
+    title: string;
+    date?: string;
+    description?: string;
+}
+
+export default function Layout(props: LayoutProps) {
     const {children, ...customMeta} = props;
 
     return(

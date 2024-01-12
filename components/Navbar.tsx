@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-    const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme("");
+    const [mounted, setMounted] = useState<boolean>(false);
+    const { theme, setTheme } = useTheme();
     
     useEffect(() => setMounted(true), []);
 
