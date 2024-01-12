@@ -3,7 +3,14 @@ import Moment from "react-moment";
 import CodeBlock from "./CodeBlock";
 import "github-markdown-css";
 
-export default function BlogPost({ cover_image, title, createdAt, content }) {
+interface IBlogPost {
+  cover_image: string;
+  title: string;
+  createdAt: string;
+  content: string;
+}
+
+export default function BlogPost({ cover_image, title, createdAt, content }: IBlogPost) {
   return (
     <div className="h-full px-8">
       <div className="flex-col justify-center items-start max-w-3xl mx-auto space-y-6 pb-10">

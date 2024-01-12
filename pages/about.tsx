@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Layout title={"About Me"}>
       <div className="h-full text-black dark:text-white px-5">
-        <div className="flex flex-col justify-center items-start mx-auto max-w-3xl space-y-6 mb-16">
+        <div className="flex flex-col justify-center items-center mx-auto max-w-3xl space-y-6 mb-16">
           <p className="font-bold text-4xl md:text-6xl tracking-tight mb-4 text-black dark:text-white">
             About Me
           </p>

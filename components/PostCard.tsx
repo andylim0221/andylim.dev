@@ -1,7 +1,14 @@
 import Link from "next/link";
 import Moment from "react-moment";
 
-export default function PostCard({ post }) {
+interface IPostCard {
+    id: string;
+    title: string;
+    description: string;
+    published_at: string;
+}
+
+export default function PostCard({ post }: { post: IPostCard }) {
 
     const {id, title, description, published_at} = post
 

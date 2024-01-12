@@ -1,9 +1,13 @@
 import { LightAsync as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-export default function CodeBlock({ language = null, value }) {
+interface ICodeBlock {
+  value: string;
+}
+
+export default function CodeBlock({ value }: ICodeBlock) {
   return (
-    <SyntaxHighlighter className="my-10" language={language} style={materialDark}>
+    <SyntaxHighlighter className="my-10" style={materialDark}>
       {value}
     </SyntaxHighlighter>
   );

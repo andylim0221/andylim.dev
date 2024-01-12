@@ -1,8 +1,9 @@
 import ContactCard from "../components/ContactCard";
 import Layout from "../components/Layout";
+
 export default function Home() {
   return (
-    <Layout title={"Andy Lim - Developer"}>
+    <Layout title={"Andy Lim - DevOps Engineer, Freelance"}>
     <div className="h-screen md:min-h-screen overscroll-none">
       <div className="flex flex-col items-center">
         <div className="fixed">
@@ -10,7 +11,7 @@ export default function Home() {
             I'm Andy
           </p>
           <p className="text-xl text-center text-black dark:text-white">
-            Your AWS Cloud Developer
+            Your AWS Cloud DevOps Engineer
           </p>
         <ContactCard />
         </div>
