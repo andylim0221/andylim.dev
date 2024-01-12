@@ -1,4 +1,9 @@
-const ExternalLink = ({ href, title }) => (
+interface IExternalLink {
+  href: string;
+  title: string;
+}
+
+const ExternalLink = ({ href, title }: IExternalLink) => (
   <a
     target="_blank"
     href={href}
