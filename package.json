@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "github-markdown-css": "^5.2.0",
     "moment": "^2.29.1",
