@@ -10,9 +10,6 @@ export default function Home() {
           <p className="text-7xl md:text-9xl font-extrabold text-center tracking-lg text-black dark:text-white mb-5 mt-20 md:mt-40">
             I'm Andy
           </p>
-          <p className="text-xl text-center text-black dark:text-white">
-            Your AWS Cloud DevOps Engineer
-          </p>
         <ContactCard />
         </div>
       </div>

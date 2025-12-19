@@ -11,10 +11,7 @@ export default function About() {
             About Me
           </p>
           <p className="text-justify text-gray-600 dark:text-gray-400">
-            I am working as a senior software developer in a Singapore startup. I designed, developed and deployed transport management system and waste management system mainly used in Singapore. Tech stacks involved are <b>React</b>, <b>TypeScript</b>, <b>Next.js</b>, <b>Nest.js</b>, <b>Docker</b>, <b>Bitbucket pipeline</b>, and <b>Google Cloud Platform</b>.
-          </p>
-          <p className="text-justify text-gray-600 dark:text-gray-400">
-            I am also working as a freelance AWS DevOps Engineer on <a className="font-bold text-green-500" href="https://www.upwork.com/freelancers/~0141e107cb94191eb5">Upwork</a>, providing services on provisioning, optimizing and developing infrastructures and resources in cloud.
+            I am an Engineer
           </p>
           <button
             className="bg-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:text-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-black dark:border-white rounded shadow cursor-pointer"
